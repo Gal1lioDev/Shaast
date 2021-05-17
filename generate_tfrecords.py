@@ -1,4 +1,4 @@
-"""
+r"""
 ORIGINAL SOURCE: https://github.com/datitran/raccoon_dataset/master/generate_tfrecord.py
 All I have done here is to change line 19 from import tensorflow as tf 
 to import tensorflow.compat.v1 as tf

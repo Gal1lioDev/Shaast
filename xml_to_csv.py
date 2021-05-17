@@ -10,7 +10,11 @@ def xml_to_csv(path):
         tree = ET.parse(xml_file)
         root = tree.getroot()
         for member in root.findall('object'):
-            value = (root.find('filename').text,
+            if root.find('filename').text.endswith('.jpeg'):
+                text = (f"{root.find('filename').text[:-2]}g")
+            else:
+                text = root.find('filename').text
+            value = (text,
                      int(root.find('size')[0].text),
                      int(root.find('size')[1].text),
                      member[0].text,
@@ -27,7 +31,7 @@ def xml_to_csv(path):
 
 def main():
     #\image_path = os.path.join(os.getcwd(), 'annotations')
-    xml_df = xml_to_csv('C:\\Users\\shukla\\Desktop\\Aaditya\\Coding\\Projects\\Python\\OpenCV\\Computer-Vision\\Datasets\\Shaast')
+    xml_df = xml_to_csv(os.getcwd())
     xml_df.to_csv('shaast_labels.csv', index=None)
     print('Successfully converted xml to csv.')
 
