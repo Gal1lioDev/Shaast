@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Some New</folder>
+	<filename>86.jpg</filename>
+	<path>C:\Users\shukla\Desktop\Aaditya\Coding\Projects\Python\OpenCV\Computer-Vision\Datasets\Shaast\Some New\86.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>1960</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Shaast</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1108</xmin>
+			<ymin>530</ymin>
+			<xmax>1422</xmax>
+			<ymax>909</ymax>
+		</bndbox>
+	</object>
+</annotation>
